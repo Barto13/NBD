@@ -1,0 +1,140 @@
+1.1
+
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sat, 12 Jun 2021 15:47:27 GMT
+Content-Type: application/json
+Content-Length: 0
+
+1.2
+
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 13 Jun 2021 13:41:31 GMT
+Content-Type: application/json
+Content-Length: 0
+
+1.3
+
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 13 Jun 2021 13:42:26 GMT
+Content-Type: application/json
+Content-Length: 0
+
+1.4
+
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 13 Jun 2021 13:42:53 GMT
+Content-Type: application/json
+Content-Length: 0
+
+1.5
+
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 13 Jun 2021 13:44:01 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+2.
+
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvhf90FACEUpkymNl4A+2vMWXBQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23432>; rel="up"
+Last-Modified: Sat, 12 Jun 2021 15:47:27 GMT
+ETag: "4BvQQV8cZZUvqliuSxC95m"
+Date: Sat, 12 Jun 2021 15:51:06 GMT
+Content-Type: application/json
+Content-Length: 132
+
+{"title": "Metro 2033", "genre": "Post-apocalyptic", "author": "Dmitry Glukhovsky", "publicationYear": 2010, "polishReleaase": true}root@9216e4549062:/var/lib/riak# 
+
+3.
+
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 13 Jun 2021 13:46:37 GMT
+Content-Type: application/json
+Content-Length: 0
+
+4.
+
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 13 Jun 2021 13:49:56 GMT
+Content-Type: application/json
+Content-Length: 0
+
+5.
+
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 13 Jun 2021 13:52:11 GMT
+Content-Type: application/json
+Content-Length: 0
+
+6.
+
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 13 Jun 2021 13:53:21 GMT
+Content-Type: application/json
+Content-Length: 0
+
+7.
+
+HTTP/1.1 404 Object Not Found
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 13 Jun 2021 13:54:36 GMT
+Content-Type: text/plain
+Content-Length: 10
+
+not found
+
+8.
+
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s23432/keys/4ky7hv89RkBhtKTmgyf2214JF3M
+Date: Sun, 13 Jun 2021 13:56:23 GMT
+Content-Type: application/json
+Content-Length: 0
+
+9.
+
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvhf9eEiYgUFdMIMpkTGPlaG9y+oWXxYA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23432>; rel="up"
+Last-Modified: Sun, 13 Jun 2021 13:56:23 GMT
+ETag: "6D7YAdLx6AE4UFdF0Txsq8"
+Date: Sun, 13 Jun 2021 13:57:38 GMT
+Content-Type: application/json
+Content-Length: 23
+
+{"exampleField": false}
+
+10.
+
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 13 Jun 2021 13:58:11 GMT
+Content-Type: application/json
+Content-Length: 0

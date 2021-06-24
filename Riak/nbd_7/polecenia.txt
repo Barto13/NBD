@@ -1,0 +1,49 @@
+1.Umieść w bazie (nazwa bucketa ma być Twoim numerem indeksu poprzedzonym literą „s”) 5 wartości,
+ gdzie każda z nich ma być dokumentem json mającym 4 pola co najmniej dwóch różnych typów. 
+
+curl -i -XPUT -H "Content-Type: application/json" -d '{"title": "Metro 2033", "genre": "Post-apocalyptic", "author": "Dmitry Glukhovsky", "publicationYear": 2010, "polishReleaase": true}' http://172.29.192.1:8098/buckets/s23432/keys/metro2033
+
+curl -i -XPUT -H "Content-Type: application/json" -d '{"title": "Metro 2035", "genre": "Post-apocalyptic", "author": "Dmitry Glukhovsky", "publicationYear": 2015, "polishReleaase": true}' http://172.29.192.1:8098/buckets/s23432/keys/metro2035
+
+curl -i -XPUT -H "Content-Type: application/json" -d '{"title": "Season of Storms", "genre": "Fantasy", "author": "Andrzej Sapkowski", "publicationYear": 2013, "polishReleaase": true}' http://172.29.192.1:8098/buckets/s23432/keys/seasonofstorms
+
+curl -i -XPUT -H "Content-Type: application/json" -d '{"title": "The Call of Cthulhu", "genre": "Horror", "author": "H.P.Lovecraft", "publicationYear": 1928, "polishReleaase": true}' http://172.29.192.1:8098/buckets/s23432/keys/callofcthulhu
+
+curl -i -XPUT -H "Content-Type: application/json" -d '{"title": "A Stainless Steel Rat is Born", "genre": "Science fiction", "author": "Harry Harrison", "publicationYear": 1985, "polishReleaase": true}' http://172.29.192.1:8098/buckets/s23432/keys/steelrat
+
+
+2.Pobierz z bazy jedną z dodanych przez Ciebie wartości. 
+
+curl -i -XGET  http://172.29.192.1:8098/buckets/s23432/keys/metro2033
+
+3.Zmodyfikuj jedną z wartości – dodając dodatkowe pole do dokumentu. 
+
+curl -i -XPUT -H "Content-Type: application/json" -d '{"title": "Metro 2033", "genre": "Post-apocalyptic", "author": "Dmitry Glukhovsky", "publicationYear": 2010, "polishReleaase": true, "addedField": true}' http://172.29.192.1:8098/buckets/s23432/keys/metro2033
+
+4.Zmodyfikuj jedną z wartości – usuwając jedną pole z wybranego dokumentu. 
+
+curl -i -XPUT -H "Content-Type: application/json" -d '{"title": "Metro 2035", "genre": "Post-apocalyptic", "author": "Dmitry Glukhovsky", "publicationYear": 2015}' http://172.29.192.1:8098/buckets/s23432/keys/metro2035
+
+5.Zmodyfikuj jedną z wartości – zmieniając wartość jednego z pól.  
+
+curl -i -XPUT -H "Content-Type: application/json" -d '{"title": "Sezon Burz", "genre": "Fantasy", "author": "Andrzej Sapkowski", "publicationYear": 2013, "polishReleaase": true}' http://172.29.192.1:8098/buckets/s23432/keys/seasonofstorms
+
+6.Usuń jeden z dokumentów z bazy. 
+
+curl -i -XDELETE http://172.29.192.1:8098/buckets/s23432/keys/steelrat
+
+7.Spróbuj pobrać z bazy wartość, która nie istnieje w tej bazie. 
+
+curl -i -XGET  http://172.29.192.1:8098/buckets/s23432/keys/steelrat
+
+8.Dodaj do bazy 1 dokument json (zawierający 1 pole), ale nie specyfikuj klucza. 
+
+curl -i -XPOST -H "Content-Type: application/json" -d '{"exampleField": false}' http://172.29.192.1:8098/buckets/s23432/keys
+
+9.Pobierz z bazy element z zadania 8. 
+
+curl -i -XGET  http://172.29.192.1:8098/buckets/s23432/keys/4ky7hv89RkBhtKTmgyf2214JF3M
+
+10.Usuń z bazy element z zadania 8. 
+
+curl -i -XDELETE http://172.29.192.1:8098/buckets/s23432/keys/4ky7hv89RkBhtKTmgyf2214JF3M
